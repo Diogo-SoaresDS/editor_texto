@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor de texto</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <main>
+        <section>
+            <div class="container">
+                <div class="formatacao">
+                    <input type="number" min="1" max="100" value="16" id="font-size" />
+                    <button class="format-bold">
+                        <img src="./src/format_bold.svg" alt="format bold">
+                    </button>
+                    <button class="format-italic">
+                        <img src="./src/format_italic.svg" alt="format italic">
+                    </button>
+                    <button class="format-underlined">
+                        <img src="./src/format_underlined.svg" alt="format underlined">
+                    </button>
+                    <button class="align-left">
+                        <img src="./src/align_left.svg" alt="align left">
+                    </button>
+                    <button class="align-center">
+                        <img src="./src/align_center.svg" alt="align center">
+                    </button>
+                    <button class="align-right">
+                        <img src="./src/align_right.svg" alt="align right">
+                    </button>
+                    <button class="match-case">
+                        <img src="./src/match_case.svg" alt="match case">
+                    </button>
+                    <input type="color" id="color-picker" />
+                </div>
+                <div class="save-file-section">
+                    <button>Salvar</button>
+                    <div class="file-upload-wrapper">
+                        <label for="arquivo">Abrir arquivo</label>
+                        <input type="file" id="arquivo" accept=".html" />
+                    </div>
+                </div>
+            </div>
+            <div contenteditable="true" class="conteudo" placeholder="Digite seu texto aqui..."></div>
+        </section>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
